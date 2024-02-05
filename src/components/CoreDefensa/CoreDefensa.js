@@ -30,7 +30,7 @@ export const CoreDefensa = () => {
         accessToken: loginData.accessToken,
       };
       const responseData = await fetchJson(
-        "http://localhost:3977/api/v1/denuncias",
+        "https://backendcidhu.onrender.com/api/v1/denuncias",
         requestData
       );
       if (Array.isArray(responseData.data) && responseData.data.length > 0) {

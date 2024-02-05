@@ -18,7 +18,7 @@ const Citas = ({ procesoId, accessToken }) => {
         const responseData = await fetchJson(
           `https://backendcidhu.onrender.com/api/v1/fechas`,
           requestData
-        );
+        );  
   
         if (responseData.status) {
           setCitasData(responseData.data);
